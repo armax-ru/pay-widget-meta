@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простая установка платежного виджета ArMax</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: sans-serif;
+        }
+        .page {
+            display: flex;
+        }
+        .page__sidebar {
+            width: 20%;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .page__content {
+            padding: 20px;
+            width: 80%;
+        }
+        .sidebar {
+            background: #f5f5f5;
+        }
+        .sidebar__logo {
+            margin-bottom: 20px;
+        }
+        .logo {
+            text-align: center;
+            font-size: 24px;
+        }
+        .logo__title {
+            margin-bottom: 10px;
+        }
+        .logo__slogan {
+            font-weight: 700px;
+            font-size: 17px;
+        }
+        .sidebar__nav {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="page__sidebar sidebar">
+
+            <div class="sidebar__logo logo">
+                <div class="logo__title">ArMax Pay <br> Widget Demo </div>
+                <div class="logo__slogan">Ручная инициализация</div>
+            </div>
+
+            <nav class="sidebar__nav">
+                <a href="https://github.com/armax-ru/pay-widget-meta">Документация</a>
+            </nav>
+        </div>
+
+        <div class="page__content">
+
+           <div id="my-widget-location">
+               <!-- Тут будет отрисован iFrame -->
+           </div>
+
+        </div>
+    </div>
+
+    <script src="https://payframe.armax.ru/widget/armax-pay-widget.min.js" ></script>
+    <script>
+        new ArmaxPayWidget ({
+          container: document.getElementById('my-widget-location'),
+          terminalId: 36587
+        });
+    </script>
+
+</body>
+</html>
