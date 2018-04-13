@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+.page {
+  display: flex;
+}
+.page__sidebar {
+  width: 20%;
+  min-height: 100vh;
+  padding: 20px;
+}
+.page__content {
+  padding: 20px;
+  width: 80%;
+}
+.sidebar {
+  background: #f5f5f5;
+}
+.sidebar__logo {
+  margin-bottom: 20px;
+}
+.logo {
+  text-align: center;
+  font-size: 24px;
+}
+.logo__title {
+  margin-bottom: 10px;
+}
+.logo__slogan {
+  font-weight: 700px;
+  font-size: 17px;
+}
+.sidebar__nav {
+  text-align: center;
+}
