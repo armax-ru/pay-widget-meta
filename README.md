@@ -30,7 +30,7 @@
 На данный момент, для подключения в платежной форме доступны следующие способы оплаты:
  * [Яндекс.Касса](/payment-methods/yandex.md)
  * [Payler](/payment-methods/payler.md)
- * WebMoney (coming soon...)
+ * Uniteller
 
 
 ### Интеграция в веб-страницу
